@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Create web page
+      copy:
+        content: "<h1>Ansible Pull Success</h1>"
+        dest: /var/www/html/index.html
