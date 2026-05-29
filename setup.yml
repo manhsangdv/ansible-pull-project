@@ -12,5 +12,5 @@
 
     - name: Create web page
       copy:
-        content: "<h1>Ansible Pull Success</h1>"
+        content: "<h1>Update by automation manhsangdv</h1>"
         dest: /var/www/html/index.html
